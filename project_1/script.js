@@ -34,8 +34,7 @@ function rememberMyFilms() {
     }
   }
 }
-
-//rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
   if (numberOfFilms < 10) {
@@ -47,7 +46,6 @@ function detectPersonalLevel() {
   } else {
     alert("Произошла ошибка");
   }
-
   /*
     (numberOfFilms < 10) ? alert("Просмотрено довольно мало фильмов") :
     (numberOfFilms < 30) ? alert("Вы классический зритель"):
@@ -55,15 +53,8 @@ function detectPersonalLevel() {
   */
 }
 
-//detectPersonalLevel();
-/*
-function showMyDB() {
-  if (personalMovieDB.private === false) {
-    console.log(personalMovieDB)
-  }
-}
-showMyDB();
-*/
+detectPersonalLevel();
+
 function showMyDB(hidden) {
   if (!hidden) {
     console.log(personalMovieDB)
@@ -71,6 +62,16 @@ function showMyDB(hidden) {
 }
 
 showMyDB(personalMovieDB.private);
+
+/* другой вариант использования функции
+function showMyDB() {
+  if (personalMovieDB.private === false) {
+    console.log(personalMovieDB)
+  }
+}
+showMyDB();
+*/
+
 
 function writeYourGenres() {
   for (let i = 1; i <= 3; i++) {
