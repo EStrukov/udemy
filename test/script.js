@@ -153,3 +153,23 @@ newArr[1] = 'f';
 console.log(array);
 console.log(newArr);
 */
+/* основы ООП
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function () {
+        console.log("Hello");
+    }
+};
+
+// const john = {
+//     health: 100
+// };
+
+Object.setPrototypeOf(john, soldier); // установили прототип от john к солдату, что передает Джону значения из солдата
+
+john.sayHello();
+
+//или создание прототипа сразу
+const john = Object.create(soldier); //Джон прототипно наследуется от солдата и имеет доступ к его функциям
+*/
